@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es-MX">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="card mb-3 mx-auto border-0" style="max-width: 750px;">
+        <div class="row g-0">
+            <div class="col-lg-3 col-md-3 col-sm-12 ">
+                <img src="assets/img/nit.png" class="img-fluid position-relative img-1 rounded-start" alt="...">
+                <img src="assets/img/nit_responsive.png" class="img-fluid position-relative img-2 "
+                    alt="...">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 bg-form p-2 rounded-3 shadow-sm">
+                <div class="card-body col-12 row m-auto bg-div rounded-3 shadow-lg">
+                    <h2 class="text-center">Formulario de Contacto</h2>
+                    <div class="col-md-6">
+                        <label class="form-label">Nombre</label>
+                        <div class="input-group">
+                            <span class="input-group-text rounded-0 input-name bg-div"><img
+                                    src="assets/svg/nombre-01.svg" width="20px" alt=""></span>
+                            <input id="nombre" type="text" class="input-name form-control bg-div">
+
+                        </div>
+                        <!-- sss -->
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-div">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text rounded-0 input-span bg-div"><img
+                                    src="assets/svg/email-01.svg" width="20px"></span>
+                            <input id="email" type="email" class="input-text form-control bg-div" placeholder="Email">
+
+                        </div>
+                        <!-- sss -->
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-div">Telefono</label>
+                        <div class="input-group">
+                            <span class="input-group-text rounded-0 input-span bg-div"><img
+                                    src="assets/svg/phone-01.svg" width="20px" alt=""></span>
+                            <input id="telefono" type="text" class="input-text form-control bg-div"
+                                placeholder="Telefono">
+
+                        </div>
+                        <!-- sss -->
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-div">Direccion</label>
+                        <div class="input-group">
+                            <span class="input-group-text rounded-0 input-span bg-div"><img
+                                    src="assets/svg/direccion-01.svg" width="20px" alt=""></span>
+                            <input id="direccion" type="text" class="input-text form-control bg-div"
+                                placeholder="Direccion">
+
+                        </div>
+                        <!-- sss -->
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-div">Asunto</label>
+                        <div class="input-group">
+                            <span class="input-group-text rounded-0 input-span bg-div"><img
+                                    src="assets/svg/asunto-01.svg" width="20px" alt=""></span>
+                            <input id="asunto" type="text" class="input-text form-control bg-div" placeholder="Asunto">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-2">
+                        <span class="bg-div ms-1 fs-5"><img src="assets/svg/comentarios-01.svg" class="ps-1 me-4"
+                                width="40px" alt="">Comentario
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Campos
+                            obligatorios</span>
+                        <div class="input-group">
+                            <textarea id="comentario" class="input-textarea bg-div" id="textarea" cols="100"
+                                rows="5"></textarea>
+                        </div>
+                        <!-- sss -->
+
+                    </div>
+
+                    <div class="col-6">
+                        <label>Selecciona la figura que corresponda a un <b id="figura" class="text-white"></b></label>
+                    </div>
+                    <div class="col-6 align-content-center">
+                        <label>
+                            <input type="radio" name="captcha" value="rectangulo">
+                            <img src="assets/svg/rectangulo-01.svg" width="60px" height="80px" alt="Option 2">
+                        </label>
+                        <label>
+                            <input type="radio" name="captcha" value="triangulo">
+                            <img id="circulo" src="assets/svg/triangulo-01.svg" width="60px" height="80px" alt="Option 2">
+                        </label>
+                        <label>
+                            <input type="radio" name="captcha" value="circulo">
+                            <img src="assets/svg/circulo-01.svg" width="60px" height="80px" alt="Option 2">
+                        </label>
+                    </div>
+                    <div class="col-12 position-relative btn-enviar">
+                        <button class="btn col-12 p-3 btn-enviar" type="submit" id="env" value="Enviar">Enviar</button>
+                    </div>
+                    <div class="modal" tabindex="-1" role="dialog" id="modalMensaje">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content bg-grey p-2">
+                                <div class="modal-content">
+                                <div class="modal-header border-0 text-center">
+                                    <h5 class="text-danger  mx-auto">Alerta</h5>
+
+                                </div>
+                                <div class="modal-body">
+                                    <p id="Alerta" class="text-wrap text-center"></p>
+                                </div>
+                                <div class="modal-footer border-0 mx-0">
+                                    <button type="button" id="confirmar" class="col-4 mx-auto btn btn-red text-white"
+                                        data-bs-dismiss="modal">Confirmar</button>
+
+                                    <button type="button" id="salir" class="col-4 mx-auto btn btn-blue-light text-white"
+                                        data-bs-dismiss="modal">salir</button>
+
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

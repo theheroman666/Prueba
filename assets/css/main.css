@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: url("assets/fonts/Font-MyriadPro/Font-MyriadPro-Light.oft") !important;
+    color: #767576;
+}
+
+/* ! Colores */
+.bg-form{
+    /* background-color: #4b4a4d; */
+    background-color: #414042 !important;
+}
+
+.bg-div{
+    background-color: #4b4a4d !important;
+    /* background-color: #414042; */
+}
+.bg-grey{
+    background-color: #acacac !important;
+}
+.btn-red{
+    background-color: #96424b !important;
+}
+
+.btn-blue-light{
+    background-color:#61a3aa !important;
+}
+
+.text-div{
+    color: #4b4a4d !important;
+    /* background-color: #414042; */
+}
+
+.center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+}
+
+/* html {
+    font-family: url("assets/fonts/Font-MyriadPro/Font-MyriadPro-Light.oft") !important;
+    background-color: #ffffff !important;
+
+}  */
+
+
+
+.input-name{
+    border: none !important;
+    border-bottom:  groove #737373 !important;
+    border-radius: 2px !important;
+    margin: 0 !important;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    -ms-border-radius: 2px !important;
+    -o-border-radius: 2px !important;
+}
+
+.input-text{
+    border: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border-top: groove #737373 !important;
+    border-right: groove #737373 !important;
+    border-bottom: groove #737373 !important;
+    border-left: 0px groove #737373 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.input-textarea{
+    border: none !important;
+    margin: 0 !important;
+    border-top: groove #737373 !important;
+    border-right: groove #737373 !important;
+    border-bottom: groove #737373 !important;
+    border-left: groove #737373 !important;
+}
+
+.input-span{
+    border: none !important;
+    margin: 0 !important;
+    border-top: groove #737373 !important;
+    border-right: 0px groove #737373 !important;
+    border-bottom: groove #737373 !important;
+    border-left: groove #737373 !important;
+}
+
+.img-1{
+    z-index: 5 !important;
+    left: 33px !important;
+}
+
+.img-2{
+    z-index: 5 !important;
+    left: 33px !important;
+    display: none;
+}
+
+.left{
+    left: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .img-1{
+        display: none;
+    }
+    .img-2{
+        padding-left: 11.8rem !important;
+        top: 24px;
+        right: 1000px !important;
+        display: flex;
+    }
+}
+
+
+/* radio */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    border: 2px solid rgb(0, 136, 247);
+  }
+
+
+/* btn-enviar */
+
+.btn-enviar{
+    top: 50px !important;
+    background-color: #539484;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn-success{
+    background-color: #539484 !important;
+}
